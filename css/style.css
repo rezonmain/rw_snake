@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding-top: 0.1rem;
+  text-align: center;
+  font-family: "Bowlby One SC", cursive;
+  color: #222;
+}
+
+#game {
+  display: block;
+  background-color: #222;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  margin-top: 0.2rem;
+  border-radius: 1rem;
+}
+.controls {
+  display: none;
+}
+
+@media only screen and (max-width: 550px) {
+  #game {
+    width: 90vw;
+    height: 90vw;
+  }
+  .controls {
+    display: flex;
+    height: 10rem;
+    width: 80vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+  }
+  .up-arrow {
+    display: block;
+    height: 3.3rem;
+    width: 3.3rem;
+    background-color: blue;
+  }
+  .side-arrows {
+    display: flex;
+    height: 3.3rem;
+    flex-flow: row nowrap;
+  }
+  .left-arrow .right-arrow {
+    display: block;
+    height: 3.3rem;
+    width: 3.3rem;
+    background-color: blue;
+  }
+
+  .down-arrow {
+    display: block;
+    height: 3.3rem;
+    width: 3.3rem;
+    background-color: blue;
+  }
+}
