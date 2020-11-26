@@ -14,8 +14,6 @@ function calcGridDivider() {
   let h = canvas.getBoundingClientRect().height;
 
   grid = w / pixelSize; // w numero de pixeles que quiero
-  console.log(w);
-  console.log(h);
 }
 
 window.onload = calcGridDivider();
@@ -56,7 +54,7 @@ var burger = {
   image: new Image(),
 };
 
-burger.image.src = "../img/b0.png";
+burger.image.src = "./img/b0.png";
 
 function gameRestart() {
   gameState = 1;
@@ -72,7 +70,6 @@ function gameRestart() {
 let blinkReq;
 function gameEnd() {
   cancelAnimationFrame(req);
-  console.log("End");
   let toggle = true;
   // Display score and add overlay
   //context.clearRect(0, 0, 500, 500); // Clear canvas
