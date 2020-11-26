@@ -30,10 +30,6 @@ h1 {
 }
 
 @media only screen and (max-width: 550px) {
-  #game {
-    width: 90vw;
-    height: 90vw;
-  }
   .controls {
     display: flex;
     height: 10rem;

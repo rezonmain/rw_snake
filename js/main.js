@@ -12,8 +12,6 @@ const pixelSize = 25;
 function calcGridDivider() {
   let w = canvas.getBoundingClientRect().width;
   let h = canvas.getBoundingClientRect().height;
-  canvas.setAttribute("width", w);
-  canvas.setAttribute("heigth", h);
 
   grid = w / pixelSize; // w numero de pixeles que quiero
   console.log(w);
