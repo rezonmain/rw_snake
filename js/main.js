@@ -72,7 +72,6 @@ function calcGridDivider() {
   }
   burger.x = ranX * grid;
   burger.y = ranY * grid;
-  console.log(grid);
 }
 
 window.onload = calcGridDivider();
