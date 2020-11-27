@@ -67,6 +67,8 @@ h1 {
     height: 320px;
   }
   .controls {
+    -moz-user-select: none;
+    -webkit-user-select: none;
     padding-top: 4rem;
     display: flex;
     height: 12rem;
