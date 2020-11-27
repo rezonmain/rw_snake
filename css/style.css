@@ -77,7 +77,6 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-flow: column nowrap;
-    cursor: pointer;
   }
   .up-arrow {
     display: block;
