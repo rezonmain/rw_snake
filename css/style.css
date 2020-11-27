@@ -16,11 +16,27 @@ h1 {
   color: #222;
 }
 
+.svg-icon {
+  width: auto;
+  height: auto;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #222;
+}
+
+.svg-icon circle {
+  stroke: #222;
+  stroke-width: 1;
+}
+
 #game {
   display: block;
   background-color: #222;
-  height: 500px;
-  width: 500px;
+  height: 640px;
+  width: 640px;
   margin: auto;
   margin-top: 0.2rem;
   border-radius: 1rem;
@@ -29,38 +45,62 @@ h1 {
   display: none;
 }
 
+@keyframes grow {
+  0% {
+    transform: scale(1.01);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.growAnimation {
+  animation: grow 100ms linear 1 forwards;
+}
+
 @media only screen and (max-width: 550px) {
+  #game {
+    width: 320px;
+    height: 320px;
+  }
   .controls {
+    padding-top: 4rem;
     display: flex;
-    height: 10rem;
+    height: 12rem;
     width: 80vw;
     margin: auto;
     align-items: center;
     justify-content: center;
     flex-flow: column nowrap;
+    cursor: pointer;
   }
   .up-arrow {
     display: block;
-    height: 3.3rem;
-    width: 3.3rem;
-    background-color: blue;
+    height: 4rem;
+    width: 4rem;
   }
   .side-arrows {
     display: flex;
-    height: 3.3rem;
+    height: 4rem;
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
   }
-  .left-arrow .right-arrow {
+  .left-arrow,
+  .right-arrow {
+    margin-left: 2rem;
+    margin-right: 2rem;
     display: block;
-    height: 3.3rem;
-    width: 3.3rem;
-    background-color: blue;
+    height: 4rem;
+    width: 4rem;
   }
 
   .down-arrow {
     display: block;
-    height: 3.3rem;
-    width: 3.3rem;
-    background-color: blue;
+    height: 4rem;
+    width: 4rem;
   }
 }
