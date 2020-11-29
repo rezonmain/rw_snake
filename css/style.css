@@ -2,6 +2,7 @@
 
 :root {
   font-size: 16px;
+  --sep-size: 3rem;
 }
 
 * {
@@ -80,28 +81,28 @@ h1 {
   }
   .up-arrow {
     display: block;
-    height: 4rem;
+    height: var(--sep-size);
     width: 4rem;
   }
   .side-arrows {
     display: flex;
-    height: 4rem;
+    height: var(--sep-size);
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
   }
   .left-arrow,
   .right-arrow {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: calc(var(--sep-size) / 2.5);
+    margin-right: calc(var(--sep-size) / 2.5);
     display: block;
-    height: 4rem;
+    height: var(--sep-size);
     width: 4rem;
   }
 
   .down-arrow {
     display: block;
-    height: 4rem;
+    height: var(--sep-size);
     width: 4rem;
   }
 }
