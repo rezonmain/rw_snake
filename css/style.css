@@ -1,108 +1,116 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-  font-size: 16px;
-  --sep-size: 3rem;
+	font-size: 16px;
+	--sep-size: 3rem;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
-  padding-top: 0.1rem;
-  text-align: center;
-  font-family: "Bowlby One SC", cursive;
-  color: #222;
+	padding-top: 0.1rem;
+	text-align: center;
+	font-family: 'Bowlby One SC', cursive;
+	color: #222;
 }
 
 .svg-icon {
-  width: auto;
-  height: auto;
+	width: auto;
+	height: auto;
 }
 
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: #222;
+	fill: #222;
 }
 
 .svg-icon circle {
-  stroke: #222;
-  stroke-width: 1;
+	stroke: #222;
+	stroke-width: 1;
 }
 
 #game {
-  display: block;
-  background-color: #222;
-  height: 640px;
-  width: 640px;
-  margin: auto;
-  margin-top: 0.2rem;
-  border-radius: 1rem;
+	display: block;
+	background-color: #222;
+	height: 640px;
+	width: 640px;
+	margin: auto;
+	margin-top: 0.2rem;
+	border-radius: 1rem;
 }
 .controls {
-  display: none;
+	display: none;
 }
 
 @keyframes grow {
-  0% {
-    transform: scale(1.01);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
+	0% {
+		transform: scale(1.01);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 .growAnimation {
-  animation: grow 100ms linear 1 forwards;
+	animation: grow 100ms linear 1 forwards;
 }
 
 @media only screen and (max-width: 550px) {
-  #game {
-    width: 320px;
-    height: 320px;
-  }
-  .controls {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    padding-top: 4rem;
-    display: flex;
-    height: 12rem;
-    width: 80vw;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column nowrap;
-  }
-  .up-arrow {
-    display: block;
-    height: var(--sep-size);
-    width: 4rem;
-  }
-  .side-arrows {
-    display: flex;
-    height: var(--sep-size);
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .left-arrow,
-  .right-arrow {
-    margin-left: calc(var(--sep-size) / 2.5);
-    margin-right: calc(var(--sep-size) / 2.5);
-    display: block;
-    height: var(--sep-size);
-    width: 4rem;
-  }
+	#game {
+		width: 320px;
+		height: 320px;
+	}
+	.controls {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		padding-top: 4rem;
+		display: flex;
+		height: 12rem;
+		width: 80vw;
+		margin: auto;
+		align-items: center;
+		justify-content: center;
+		flex-flow: column nowrap;
+	}
+	.up-arrow {
+		padding-bottom: 0.5rem;
+		display: block;
+		height: var(--sep-size);
+		width: 4rem;
+	}
+	.side-arrows {
+		display: flex;
+		height: var(--sep-size);
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.left-arrow {
+		margin-left: calc(var(--sep-size) / 2.5);
+		margin-right: calc(var(--sep-size) / 1.8);
+		display: block;
+		height: var(--sep-size);
+		width: 4rem;
+	}
+	.right-arrow {
+		margin-left: calc(var(--sep-size) / 2.5);
+		margin-right: calc(var(--sep-size) / 2.5);
+		display: block;
+		height: var(--sep-size);
+		width: 4rem;
+	}
 
-  .down-arrow {
-    display: block;
-    height: var(--sep-size);
-    width: 4rem;
-  }
+	.down-arrow {
+		padding-top: 0.5rem;
+		display: block;
+		height: var(--sep-size);
+		width: 4rem;
+	}
 }
